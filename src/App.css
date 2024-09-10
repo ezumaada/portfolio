@@ -23,3 +23,7 @@ form textarea{
 body {
   @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 }
+html {
+  scroll-behavior: smooth;
+}
+

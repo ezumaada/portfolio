@@ -14,23 +14,23 @@ import mysql from '../../images/sql.jpg';
 const Skills = () => {
   const Card = (props) => {
     return (
-      <div className="bg-white text-gray-600 border-solid border-2 p-4">
-        <img src={props.image} className="w-12 h-12 mb-4" alt={props.title} />
+      <div className="bg-white text-gray-600 border-solid border-2 p-4 transition-transform transform hover:scale-105 hover:shadow-lg rounded-md">
+        <img src={props.image} className="w-12 h-12 mb-4 mx-auto" alt={props.title} />
         <div>
-          <h3>{props.title}</h3>
-          <p>{props.description}</p>
+          <h3 className="text-center font-semibold">{props.title}</h3>
+          <p className="text-sm text-center">{props.description}</p>
         </div>
-        <div>
-          <a href={props.link} target="_blank" rel="noopener noreferrer">Learn More</a>
+        <div className="mt-4 text-center">
+          <a href={props.link} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Learn More</a>
         </div>
       </div>
     );
   };
 
   return (
-    <div>
+    <div className="container mx-auto px-4">
       <h1 className="text-2xl text-center font-semibold my-4">My Skills</h1>
-      <div className="grid lg:grid-cols-3 gap-4 md:grid-cols-2">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
         <Card 
           image={javascript} 
           link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" 

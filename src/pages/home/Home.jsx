@@ -7,18 +7,32 @@ import Contact from '../../components/contact/Contact';
 import Navbar from '../../components/navbar/Navbar';
 
 const Home = () => {
-  
   return (
     <div>
-      <Navbar/>
-      <About/>
+      <Navbar />
       
-      <Skills/>
-      <Resume/>
-      <Contact/>
-      <Socials/>
+      {/* Each section has an ID matching the links in the Navbar */}
+      <section id="about">
+        <About />
+      </section>
+      
+      <section id="skills">
+        <Skills />
+      </section>
+      
+      <section id="resume">
+        <Resume />
+      </section>
+      
+      <section id="contact">
+        <Contact />
+      </section>
+      
+      <section id="socials">
+        <Socials />
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

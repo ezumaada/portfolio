@@ -13,7 +13,7 @@ const About = () => {
       return () => clearInterval(interval); // Cleanup interval on component unmount
     }, [changingTexts.length]);
   return (
-    <div className='mt-28'>
+    <div className='mt-28 px-[5%]'>
         <div>
           <h1>Dev. Ezuma Ada</h1>
         <h1 className="text-2xl font-bold text-center">
