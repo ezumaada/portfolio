@@ -5,6 +5,7 @@ import Socials from '../../components/socials/Socials';
 import Skills from '../../components/skills/Skills';
 import Contact from '../../components/contact/Contact';
 import Navbar from '../../components/navbar/Navbar';
+import Projects from '../../components/projects/Projects';
 
 const Home = () => {
   return (
@@ -22,6 +23,10 @@ const Home = () => {
       
       <section id="resume">
         <Resume />
+      </section>
+
+      <section id="projects">
+        <Projects />
       </section>
       
       <section id="contact">

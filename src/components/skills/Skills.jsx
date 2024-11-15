@@ -10,6 +10,7 @@ import cssm from '../../images/vancss.png';
 import material from '../../images/matui.png';
 import bootstrap from '../../images/bootstrap.png';
 import mysql from '../../images/sql.jpg';
+import csharp from '../../images/csharp.png'
 
 const Skills = () => {
   const Card = (props) => {
@@ -43,6 +44,13 @@ const Skills = () => {
           title="HTML 5" 
           description="Expert in HTML5, ensuring semantic, accessible, and well-structured web content." 
         />
+        <Card  
+  image={csharp} 
+  link="https://learn.microsoft.com/en-us/dotnet/csharp/" 
+  title="C#" 
+  description="Learnt C#, a modern, object-oriented programming language for building a variety of applications, including web, desktop, and mobile." 
+/>
+
         <Card 
           image={vanilla} 
           link="https://developer.mozilla.org/en-US/docs/Web/CSS" 
